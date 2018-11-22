@@ -5,74 +5,76 @@ body {
     margin: 0;
     padding: 0;
     border: 0;
-	background: #B5B2B0;
-	font-family: Lato, Helvitica, sans-serif;
+    background: #B5B2B0;
+    font-family: Lato, Helvitica, sans-serif;
 }
 header {
-    
     width: 100%;
-	background: black;
+    background: black;
 }
 nav {
-	position: fixed;
+    position: fixed;
     top: 0px;
     left: 0px;
     z-index: 9999;
-	width: 100%;
-	background: black;
-	height: 50px;
-
+    width: 100%;
+    background: black;
+    height: 50px;
 }
 ul {
-	list-style-type: none;
-	overflow: hidden;
-	margin: 0 25px 0 0;
-	padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0 25px 0 0;
+    padding: 0;
 }
 li {
-	float: right;
+    float: right;
 }
 li a {
-	text-decoration: none;
-	color: white;
-	display: block;
-	padding: 16px 20px;
-	text-align: center;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 16px 20px;
+    text-align: center;
 }
-
 li a:hover:not(.active) {
     background-color: #111;
 }
 .active {
     background-color: #2D2D2D;
-
 }
 h1, h2 {
-	text-align: center;
-		-webkit-animation: fadein 2s;
+    text-align: center;
+    -webkit-animation: fadein 2s;
 }
 @keyframes fadein {
-	from { opacity: 0; }
-	to { opacity: 1; }
-	}
-
-#sweetbot {	
-	margin: 50px 0 50px 0;
+ from {
+opacity: 0;
+}
+ to {
+opacity: 1;
+}
+}
+#sweetbot {
+    margin: 50px 0 50px 0;
 }
 .hotbot {
-	height: auto;
-	width: 100%;
-	-webkit-animation: fadein 5s;
+    height: auto;
+    width: 100%;
+    -webkit-animation: fadein 5s;
 }
 @keyframes fadein {
-	from { opacity: 0; }
-	to { opacity: 1; }
-	}
+ from {
+opacity: 0;
+}
+ to {
+opacity: 1;
+}
+}
 section {
     display: block;
     height: 90vh;
-   
-	margin-right: 0;
+    margin-right: 0;
 }
 #home {
     background: #B5B2B0;
@@ -81,27 +83,25 @@ section {
     background: #ffffff;
 }
 #about {
-	background: #B5B2B0;
+    background: #B5B2B0;
 }
 #aboutus {
-	height: 50px;
-	background: #ffffff;
+    height: 50px;
+    background: #ffffff;
 }
 #contact-us {
-	height: 50px;
-	background: #ffffff;
+    height: 50px;
+    background: #ffffff;
 }
 #ourproducts {
-	height: 50px;
-	background:#B5B2B0;
+    height: 50px;
+    background: #B5B2B0;
 }
-
 #products {
-	background: #ffffff;
-	
+    background: #ffffff;
 }
 .frontpage {
-	margin: auto;
+    margin: auto;
     width: 50%;
     padding: 10px;
 }
@@ -109,48 +109,49 @@ section {
     float: left;
 }
 .shop {
-	border-width: 2px;
-	border-style: solid;
-	padding: 0.5em 1.75em;
-	background-color: transparent;
-	cursor: pointer;
-	overflow: hidden;
-	align-content: center;
-	margin: auto;
+    border-width: 2px;
+    border-style: solid;
+    padding: 0.5em 1.75em;
+    background-color: transparent;
+    cursor: pointer;
+    overflow: hidden;
+    align-content: center;
+    margin: auto;
     width: 100px;
-	text-align: center;
-		-webkit-animation: fadein 5s;
+    text-align: center;
+    -webkit-animation: fadein 5s;
 }
 @keyframes fadein {
-	from { opacity: 0; }
-	to { opacity: 1; }
-	}
-.shop a {
-	font-size: 1.15rem;
-	text-decoration: none;
-	text-transform: uppercase;
-	color: black;
-	}
-.shop:hover, .shop:focus {
-	background: #AB9A9A;
-	color: black;
-	background-color: #DF9B67;
+ from {
+opacity: 0;
 }
-
+ to {
+opacity: 1;
+}
+}
+.shop a {
+    font-size: 1.15rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.shop:hover, .shop:focus {
+    background: #AB9A9A;
+    color: black;
+    background-color: #DF9B67;
+}
 /*Contact form*/
 
 input[type=text], select, textarea {
-    width: 100%; 
-    padding: 12px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    box-sizing: border-box; 
-    margin-top: 6px; 
-    margin-bottom: 16px; 
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
     resize: vertical;
 }
-
-
 input[type=submit] {
     background-color: #DF9B67;
     color: white;
@@ -158,59 +159,49 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-	opacity: 0.7;
-	transition: 0.2s;
+    opacity: 0.7;
+    transition: 0.2s;
 }
-
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
     opacity: 1;
-	
 }
-
 /* Add a background color and some padding around the form */
 .container {
     border-radius: 5px;
     padding: 20px;
-	width: 60%;
-	margin-left: auto;
-	margin-right: auto;
-	
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 /*Footer styles*/
 
-.footer{
-	padding: 3rem;
-	background-color:#749cd3;
-	height: 100%;
-	box-sizing: inherit;
-	
+.footer {
+    padding: 3rem;
+    background-color: #749cd3;
+    height: 100%;
+    box-sizing: inherit;
 }
-.images{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 100%;
-	height: auto;
-	
+.images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
 }
 .banner {
-	height: auto;
-	width: 100%;
-	
-	
+    height: auto;
+    width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
-    section {
-        height: 90%;
-    }
-		ul {
-	margin: 0 0 0 0;
-
+section {
+    height: 90%;
+}
+ul {
+    margin: 0 0 0 0;
 }
 }
-p{
-	padding-left: 3%;
+p {
+    padding-left: 3%;
 }
