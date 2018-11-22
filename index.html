@@ -4,30 +4,26 @@
 
 <title>Eksempel</title>
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- Loading jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <!-- loading scroll to plugin-->
 <script src="scripts/jquery.scrollTo.min.js"></script>
-<script>
-	
+<script>	
 	$(document).ready(function(){
 		//bliver udført når dokumentet er læst ind!
-		console.log('jQuery er her ');
-		$('#knap').click(klik);
 		
-		//implementing scroll animation
 		$('nav a').click(function(){
-			$(window).scrollTo(this.hash, 1000);
-		});
-		});	
+			$(window).scrollTo(this.hash, 750) });	
+		$('div a').click(function(){
+			$(window).scrollTo(this.hash, 750) });	
+		
 	
-	//var trigger = document.getElementById('knap');
-	//trigger.addEventListener('click', klik);
-	
-	
-	//msg=messag
-	
-	}
+	$(".shop").click(function() {
+  		window.location = $(this).find("a").attr("href"); 
+  		return false;
+	});
+	});
 </script>
 <link href="styles/styles.css" rel="stylesheet" type="text/css">
 <link href="styles/simplegrid.css" rel="stylesheet" type="text/css">
@@ -41,7 +37,7 @@
 	<nav>
 		<ul>
 		<li><a id="kontakt" href="#contact">Kontakt</a></li>
-		<li><a href="#about">Om os</a></li>
+		<li><a href="#aboutus">Om os</a></li>
 		<li><a href="#products">Produkter</a></li>
 		<li><a href="#head">Hjem</a></li>
 		</ul>
@@ -62,33 +58,34 @@
 <section id="products">
 	<div class="col-4-12">
 		<h2>Web udvikling</h2>
-		
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque, harum nesciunt quaerat perferendis fuga inventore animi ipsam molestiae distinctio recusandae suscipit dignissimos consectetur quas commodi. Perspiciatis autem, in fugiat!</p>
+		<img class="images" src="images/udvikling.png" width="300" height="300" alt=""/>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque, harum nesciunt quaerat perferendis fuga inventore animi ipsam molestiae distinctio recusandae suscipit dignissimos consectetur quas commodi. Perspiciatis autem, in fugiat!</p>
 		
 	</div>
 	<div class="col-4-12">
 		<h2>Web sikkerhed</h2>
-		
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque, harum nesciunt quaerat perferendis fuga inventore animi ipsam molestiae distinctio recusandae suscipit dignissimos consectetur quas commodi. Perspiciatis autem, in fugiat!</p>
+		<img class="images" src="images/sikkerhed.png" width="300" height="300" alt=""/>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque, harum nesciunt quaerat perferendis fuga inventore animi ipsam molestiae distinctio recusandae suscipit dignissimos consectetur quas commodi. Perspiciatis autem, in fugiat!</p>
 		
 	</div>
 	<div class="col-4-12">
 		<h2>Branding</h2>
-		
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque, harum nesciunt quaerat perferendis fuga inventore animi ipsam molestiae distinctio recusandae suscipit dignissimos consectetur quas commodi. Perspiciatis autem, in fugiat!</p>
+		<img class="images" src="images/branding.png" width="300" height="300" alt=""/>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda atque, harum nesciunt quaerat perferendis fuga inventore animi ipsam molestiae distinctio recusandae suscipit dignissimos consectetur quas commodi. Perspiciatis autem, in fugiat!</p>
 	</div>
   
 </section>
-	
+<div id="aboutus"></div>
 <section id="about">
-	<div class="col-1-1">
+	<img class="banner" src="images/banner.png" width="1992" height="554" alt="" align="top"/>
+	<div class="col-1-1"> 
   <h2>Om os</h2>
 	</div>
-	<div class="col-1-1">
 		<!--billede-->
-	</div>
+   
 	<div class="col-1-2">
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, nemo, voluptatibus. At quaerat cumque expedita sit itaque quidem, nulla soluta ullam, ipsa alias id, dolorem pariatur deleniti laborum blanditiis minima!</p>
+	
+	  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, nemo, voluptatibus. At quaerat cumque expedita sit itaque quidem, nulla soluta ullam, ipsa alias id, dolorem pariatur deleniti laborum blanditiis minima!</p>
 	</div>
 	<div class="col-1-2">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sit praesentium maiores quaerat harum, quasi, porro aut soluta similique impedit id sint nemo asperiores distinctio minima rem veritatis voluptas autem.</p>
@@ -97,25 +94,31 @@
 	
 	<section id="contact">
 		<div class="container">
+		<h2>Kontakt</h2>
   <form action="action_page.php">
 
     <label for="fname">Fornavn</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <input type="text" id="fname" name="firstname" placeholder="Dit fornavn..">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="lname">Efternavn</label>
+    <input type="text" id="lname" name="lastname" placeholder="Dit efternavn..">
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="subject">Emne</label>
+    <textarea id="subject" name="subject" placeholder="Skriv her.." style="height:200px"></textarea>
 
-    <input type="submit" value="Submit">
+    <input type="submit" value="Send">
 
   </form>
 </div>
 </section>
-	
-	<footer>
-	
-	</footer>
+<footer>
+ 
+ <div class="col-1-2 footer"><b>Lorem ipsum</b><p>CEO Merete Geldermann -   mli@cphbusiness.dk
+
+CEO Marc Kluge -   klu@cphbusiness.dk</p><p>Copyright &copy; 2018 Sweet.bot, Inc. All rights reserved.</p>
+	</div> 
+	<div class="col-1-2 footer"><b>Lorem ipsum</b><p>dolor sit amet, consectetur adipisicing elit. Rem optio ullam sed eveniet dolorum sint, qui. Unde molestiae laboriosam, repellat magni totam, repellendus ipsa consequatur, voluptates mollitia esse nobis corrupti.</p>
+	</div>
+</footer>
 </body>
 </html>
