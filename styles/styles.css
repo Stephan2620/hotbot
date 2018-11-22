@@ -49,7 +49,12 @@ li a:hover:not(.active) {
 }
 h1, h2 {
 	text-align: center;
+		-webkit-animation: fadein 2s;
 }
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+	}
 
 #sweetbot {	
 	margin: 50px 0 50px 0;
@@ -57,7 +62,12 @@ h1, h2 {
 .hotbot {
 	height: auto;
 	width: 100%;
+	-webkit-animation: fadein 5s;
 }
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+	}
 section {
     display: block;
     height: 90vh;
@@ -65,17 +75,25 @@ section {
 	margin-right: 0;
 }
 #home {
-    background: #f2f2f2;
+    background: #B5B2B0;
 }
 #contact {
     background: #ffffff;
 }
 #about {
-	background: #f2f2f2;
+	background: #B5B2B0;
 }
 #aboutus {
 	height: 50px;
 	background: #ffffff;
+}
+#contact-us {
+	height: 50px;
+	background: #ffffff;
+}
+#ourproducts {
+	height: 50px;
+	background:#B5B2B0;
 }
 
 #products {
@@ -101,7 +119,12 @@ section {
 	margin: auto;
     width: 100px;
 	text-align: center;
+		-webkit-animation: fadein 5s;
 }
+@keyframes fadein {
+	from { opacity: 0; }
+	to { opacity: 1; }
+	}
 .shop a {
 	font-size: 1.15rem;
 	text-decoration: none;
@@ -183,4 +206,7 @@ input[type=submit]:hover {
     section {
         height: 90%;
     }
+}
+p{
+	padding-left: 3%;
 }
